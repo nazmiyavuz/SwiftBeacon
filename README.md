@@ -55,14 +55,14 @@ pod 'SwiftBeacon', '~> 1.0.5'
 
 ### Swift Package Manager
 
-EdgeKit is available through [Swift Package Manager](https://swift.org/package-manager/). To install
-it, in Xcode select `File` > `Add Package Dependencies...` and add EdgeKit repository URL:
+SwiftBeacon is available through [Swift Package Manager](https://swift.org/package-manager/). To install
+it, in Xcode select `File` > `Add Package Dependencies...` and add SwiftBeacon repository URL:
 
 ```url
 https://github.com/nazmiyavuz/SwiftBeacon.git
 ```
 
-Note: Please update the latest version or `main` branch of the EdgeKit repository in order to get the latest features.
+Note: Please update the latest version or `main` branch of the SwiftBeacon repository in order to get the latest features.
 
 ## Author
 
