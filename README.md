@@ -1,15 +1,13 @@
 # SwiftBeacon
 
-[![CI Status](https://img.shields.io/travis/nazmiyavuz/SwiftBeacon.svg?style=flat)](https://travis-ci.org/nazmiyavuz/SwiftBeacon)
-[![Version](https://img.shields.io/cocoapods/v/SwiftBeacon.svg?style=flat)](https://cocoapods.org/pods/SwiftBeacon)
-[![License](https://img.shields.io/cocoapods/l/SwiftBeacon.svg?style=flat)](https://cocoapods.org/pods/SwiftBeacon)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftBeacon.svg?style=flat)](https://cocoapods.org/pods/SwiftBeacon)
+[![apple](https://img.shields.io/badge/platform-iOS-181717?style=plastic&logo=apple&color=lightgray)](https://developer.apple.com/)
+[![swift](https://img.shields.io/badge/swift-6.0-181717?style=plastic&logo=swift&color=orange)](https://developer.apple.com/swift/)
+
+A lightweight library to log your codes and errors safely.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
