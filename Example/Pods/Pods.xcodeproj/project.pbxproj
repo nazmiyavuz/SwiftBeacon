@@ -11,6 +11,7 @@
 		401EA8452D06DD34006D0B9F /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401EA8442D06DD34006D0B9F /* LogLevel.swift */; };
 		401EA8472D06DDB4006D0B9F /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401EA8462D06DDB4006D0B9F /* Context.swift */; };
 		401EA8492D06E003006D0B9F /* SwiftBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401EA8482D06E003006D0B9F /* SwiftBeacon.swift */; };
+		401EA85B2D06FBA0006D0B9F /* Beaconable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401EA85A2D06FBA0006D0B9F /* Beaconable.swift */; };
 		52B897CAD29995DC54148A18AB303F43 /* Pods-SwiftBeacon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE68193C04CA9A2475C54CBBE3AF001 /* Pods-SwiftBeacon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F3BEA2565E440755A56A57A43033ABD /* SwiftBeacon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27088120C717F1A76993A5543CDDAFA6 /* SwiftBeacon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		890B68D65C7850819C59DFD12E22516D /* Pods-SwiftBeacon_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF569DAD8B35811A92C31C1C129F89B /* Pods-SwiftBeacon_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +51,7 @@
 		401EA8442D06DD34006D0B9F /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		401EA8462D06DDB4006D0B9F /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		401EA8482D06E003006D0B9F /* SwiftBeacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBeacon.swift; sourceTree = "<group>"; };
+		401EA85A2D06FBA0006D0B9F /* Beaconable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beaconable.swift; sourceTree = "<group>"; };
 		46F5D0C42908B315AD619EAF9B1C2B10 /* Pods-SwiftBeacon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftBeacon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4B73461D9F771DE5F7EFBDD43615B826 /* SwiftBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBeacon.debug.xcconfig; sourceTree = "<group>"; };
 		4EF5A14367F8AD37988E036CD11F8F2D /* Pods-SwiftBeacon_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftBeacon_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				401EA8462D06DDB4006D0B9F /* Context.swift */,
 				401EA8442D06DD34006D0B9F /* LogLevel.swift */,
 				401EA8482D06E003006D0B9F /* SwiftBeacon.swift */,
+				401EA85A2D06FBA0006D0B9F /* Beaconable.swift */,
 				A3F6AB6097CBD517E552B77D64A70507 /* Pod */,
 				C5C9B2C0E13083ECAB6F26330F17DF41 /* Support Files */,
 			);
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				401EA8492D06E003006D0B9F /* SwiftBeacon.swift in Sources */,
+				401EA85B2D06FBA0006D0B9F /* Beaconable.swift in Sources */,
 				401EA8472D06DDB4006D0B9F /* Context.swift in Sources */,
 				401EA8452D06DD34006D0B9F /* LogLevel.swift in Sources */,
 				19B228A2FD41BA076AAB2CAFE5E20814 /* SwiftBeacon-dummy.m in Sources */,
