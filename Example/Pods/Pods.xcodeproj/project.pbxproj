@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19B228A2FD41BA076AAB2CAFE5E20814 /* SwiftBeacon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1583D21DBC46C8BD76D31217C8EB7D29 /* SwiftBeacon-dummy.m */; };
+		401EA8452D06DD34006D0B9F /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401EA8442D06DD34006D0B9F /* LogLevel.swift */; };
 		52B897CAD29995DC54148A18AB303F43 /* Pods-SwiftBeacon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE68193C04CA9A2475C54CBBE3AF001 /* Pods-SwiftBeacon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F3BEA2565E440755A56A57A43033ABD /* SwiftBeacon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27088120C717F1A76993A5543CDDAFA6 /* SwiftBeacon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		890B68D65C7850819C59DFD12E22516D /* Pods-SwiftBeacon_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF569DAD8B35811A92C31C1C129F89B /* Pods-SwiftBeacon_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,30 +47,31 @@
 		27088120C717F1A76993A5543CDDAFA6 /* SwiftBeacon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftBeacon-umbrella.h"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3BE68193C04CA9A2475C54CBBE3AF001 /* Pods-SwiftBeacon_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftBeacon_Example-umbrella.h"; sourceTree = "<group>"; };
+		401EA8442D06DD34006D0B9F /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		46F5D0C42908B315AD619EAF9B1C2B10 /* Pods-SwiftBeacon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftBeacon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4B73461D9F771DE5F7EFBDD43615B826 /* SwiftBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBeacon.debug.xcconfig; sourceTree = "<group>"; };
 		4EF5A14367F8AD37988E036CD11F8F2D /* Pods-SwiftBeacon_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftBeacon_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5083954CCFEB7509379078B91F4EBDCF /* Pods-SwiftBeacon_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftBeacon_Tests"; path = Pods_SwiftBeacon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		657BC03B2F1293AA84BAA9E04940FA77 /* SwiftBeacon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftBeacon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5083954CCFEB7509379078B91F4EBDCF /* Pods_SwiftBeacon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBeacon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		657BC03B2F1293AA84BAA9E04940FA77 /* SwiftBeacon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftBeacon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6DF569DAD8B35811A92C31C1C129F89B /* Pods-SwiftBeacon_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftBeacon_Tests-umbrella.h"; sourceTree = "<group>"; };
 		739C81C4216F20581BFB5BE18B49DE2F /* Pods-SwiftBeacon_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftBeacon_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7752AD56D6FA2D60ABE27B11CC23DDFE /* Pods-SwiftBeacon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftBeacon_Example.release.xcconfig"; sourceTree = "<group>"; };
 		788AADB45008723279A8917262858EEB /* SwiftBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBeacon.release.xcconfig; sourceTree = "<group>"; };
 		7A5299748A9CA02C88AAEE40AC328273 /* Pods-SwiftBeacon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftBeacon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		871BEEFC760529DB6FFCB0B248BBE3BA /* Pods-SwiftBeacon_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftBeacon_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E4B9FD9097FFB983304D7CAC657133A /* SwiftBeacon */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftBeacon; path = SwiftBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4B9FD9097FFB983304D7CAC657133A /* SwiftBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C9C60FB5435F49AD826D7E53A6F305 /* Pods-SwiftBeacon_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftBeacon_Tests-Info.plist"; sourceTree = "<group>"; };
 		9CFF4912CB31FEDC461C7EA1220E7670 /* Pods-SwiftBeacon_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftBeacon_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD8693ABE824227B9EFA217C8880E708 /* Pods-SwiftBeacon_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftBeacon_Tests.modulemap"; sourceTree = "<group>"; };
-		BF84A644A4D617C2AB78151EA2807851 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BF84A644A4D617C2AB78151EA2807851 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C6D5206887B1CB548447D8AE5A39D413 /* SwiftBeacon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftBeacon-Info.plist"; sourceTree = "<group>"; };
 		CE84A883AF4CD303989F60F0E95739A2 /* Pods-SwiftBeacon_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftBeacon_Example-Info.plist"; sourceTree = "<group>"; };
 		DB7B9B74BDC3AD73DB21F3BE1A7DE6F1 /* Pods-SwiftBeacon_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftBeacon_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DD05FF01EF509BF07129F9709009571E /* Pods-SwiftBeacon_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftBeacon_Example-dummy.m"; sourceTree = "<group>"; };
-		F2F668C64B089796093BA501A9A3DAA5 /* Pods-SwiftBeacon_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftBeacon_Example"; path = Pods_SwiftBeacon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F668C64B089796093BA501A9A3DAA5 /* Pods_SwiftBeacon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBeacon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E4C951C873B70A76D746A7AB55B8DB /* Pods-SwiftBeacon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftBeacon_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FBFA78798F7EB17EA11D1398AA7B62B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FBFA78798F7EB17EA11D1398AA7B62B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		2023AE5EFBF64F6062347373D9A72CC5 /* SwiftBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				401EA8442D06DD34006D0B9F /* LogLevel.swift */,
 				1DAFC8F421209684DAC09F264BE5AE9A /* ReplaceMe.swift */,
 				A3F6AB6097CBD517E552B77D64A70507 /* Pod */,
 				C5C9B2C0E13083ECAB6F26330F17DF41 /* Support Files */,
@@ -147,9 +150,9 @@
 		27E10EB24BC6F44708712A9367B8402B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2F668C64B089796093BA501A9A3DAA5 /* Pods-SwiftBeacon_Example */,
-				5083954CCFEB7509379078B91F4EBDCF /* Pods-SwiftBeacon_Tests */,
-				8E4B9FD9097FFB983304D7CAC657133A /* SwiftBeacon */,
+				F2F668C64B089796093BA501A9A3DAA5 /* Pods_SwiftBeacon_Example.framework */,
+				5083954CCFEB7509379078B91F4EBDCF /* Pods_SwiftBeacon_Tests.framework */,
+				8E4B9FD9097FFB983304D7CAC657133A /* SwiftBeacon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +272,7 @@
 			);
 			name = "Pods-SwiftBeacon_Tests";
 			productName = Pods_SwiftBeacon_Tests;
-			productReference = 5083954CCFEB7509379078B91F4EBDCF /* Pods-SwiftBeacon_Tests */;
+			productReference = 5083954CCFEB7509379078B91F4EBDCF /* Pods_SwiftBeacon_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9D22CF88E2F2568B23D65116E8E52ADE /* Pods-SwiftBeacon_Example */ = {
@@ -288,7 +291,7 @@
 			);
 			name = "Pods-SwiftBeacon_Example";
 			productName = Pods_SwiftBeacon_Example;
-			productReference = F2F668C64B089796093BA501A9A3DAA5 /* Pods-SwiftBeacon_Example */;
+			productReference = F2F668C64B089796093BA501A9A3DAA5 /* Pods_SwiftBeacon_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D1AD5FE4AEC3F3B6D399CE4E2E99DA8D /* SwiftBeacon */ = {
@@ -306,7 +309,7 @@
 			);
 			name = SwiftBeacon;
 			productName = SwiftBeacon;
-			productReference = 8E4B9FD9097FFB983304D7CAC657133A /* SwiftBeacon */;
+			productReference = 8E4B9FD9097FFB983304D7CAC657133A /* SwiftBeacon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,8 +330,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 27E10EB24BC6F44708712A9367B8402B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F4262CA4ADB0313078F1E0BF215B96 /* ReplaceMe.swift in Sources */,
+				401EA8452D06DD34006D0B9F /* LogLevel.swift in Sources */,
 				19B228A2FD41BA076AAB2CAFE5E20814 /* SwiftBeacon-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,8 +501,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
