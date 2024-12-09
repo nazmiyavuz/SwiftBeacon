@@ -6,43 +6,48 @@
 //
 
 import Foundation
+import OSLog
 
+/// A struct to log codes in the project.
 public struct SwiftBeacon {
     
-    public init() {}
-
-    public func verbose(_ message: @autoclosure () -> Any, shouldLogContext: Bool = true, file: String = #file,
-                        line: Int = #line, function: String = #function) {
-        let context = Context(file: file, function: function, line: line)
-        handleLog(level: .verbose, message: message(), shouldLogContext: shouldLogContext, context: context)
+    /// Using your bundle identifier is a great way to provide a unique identifier.
+    private var subsystem = Bundle.main.bundleIdentifier
+    
+    private var _logName: String? = nil
+    
+    /// A init function which can be used under some versions.
+    ///
+    /// under of (macOS 10.15, iOS 15.0, *)
+    public init() {
+        _logName = nil
     }
     
-    public func info(_ message: @autoclosure () -> Any, shouldLogContext: Bool = true, file: String = #file,
-                     line: Int = #line, function: String = #function) {
-        let context = Context(file: file, function: function, line: line)
-        handleLog(level: .info, message: message(), shouldLogContext: shouldLogContext, context: context)
+    /// A init function which can be used over some versions.
+    ///
+    /// over this versions:
+    /// (macOS 10.15, iOS 15.0, *)
+    @available(macOS 10.15, iOS 15.0, *)
+    public init(logName: String? = nil) {
+        _logName = logName
     }
     
-    public func debug(_ message: @autoclosure () -> Any, shouldLogContext: Bool = true, file: String = #file,
-                      line: Int = #line, function: String = #function) {
-        let context = Context(file: file, function: function, line: line)
-        handleLog(level: .debug, message: message(), shouldLogContext: shouldLogContext, context: context)
+    @available(macOS 10.15, iOS 15.0, *)
+    private var logName: String {
+        _logName ?? "logging of \(subsystem ?? "")"
     }
     
-    public func warning(_ message: @autoclosure () -> Any, shouldLogContext: Bool = true, file: String = #file,
-                        line: Int = #line, function: String = #function) {
-        let context = Context(file: file, function: function, line: line)
-        handleLog(level: .warning, message: message(), shouldLogContext: shouldLogContext, context: context)
+    @available(macOS 10.15, iOS 15.0, *)
+    fileprivate var logger: Logger {
+        .init(subsystem: subsystem ?? "", category: logName)
     }
     
-    public func error(_ message: @autoclosure () -> Any, shouldLogContext: Bool = true, file: String = #file,
-                      line: Int = #line, function: String = #function) {
-        let context = Context(file: file, function: function, line: line)
-        handleLog(level: .error, message: message(), shouldLogContext: shouldLogContext, context: context)
-    }
-    
-    fileprivate func handleLog(level: LogLevel, message: @autoclosure () -> Any,
-                                      shouldLogContext: Bool, context: Context) {
+    func handleLog(
+        level: LogLevel,
+        message: @autoclosure () -> Any,
+        shouldLogContext: Bool,
+        context: Context
+    ) {
         let logComponents = ["[\(level.prefix)", "\(message())]"]
         
         var fullString = logComponents.joined(separator: " ")
@@ -50,19 +55,49 @@ public struct SwiftBeacon {
             fullString += " → \(context.description)"
         }
         #if DEBUG
-        switch level {
-            
-        case .verbose:
-            print(fullString)
-        case .info:
-            print(fullString)
-        case .debug:
-            print(fullString)
-        case .warning:
-            print(fullString)
-        case .error:
+        if #available (macOS 10.15, iOS 15.0, *) {
+            handleLog(level: level, message: fullString)
+        } else {
             print(fullString)
         }
         #endif
     }
+    
+    @available(macOS 10.15, iOS 15.0, *)
+    func handleLog(
+        level: LogLevel,
+        message: String
+    ) {
+        #if DEBUG
+        switch level {
+        case .trace:    logger.trace("\(message)")
+        case .debug:    logger.debug("\(message)")
+        case .info:     logger.info("\(message)")
+        case .notice:   logger.notice("\(message)")
+        case .warning:  logger.warning("\(message)")
+        case .error:    logger.error("\(message)")
+        case .critical: logger.critical("\(message)")
+        case .fault:    logger.fault("\(message)")
+        }
+        #endif
+    }
 }
+
+/*
+ public func trace(
+     _ message: @autoclosure () -> Any,
+     shouldLogContext: Bool = true,
+     file: String = #file,
+     line: Int = #line,
+     function: String = #function
+ ) {
+     
+     let context = Context(file: file, function: function, line: line)
+     handleLog(
+         level: .info,
+         message: message(),
+         shouldLogContext: shouldLogContext,
+         context: context
+     )
+ }
+ */
