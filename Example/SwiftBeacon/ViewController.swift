@@ -12,13 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        logger.trace("Trace example")
+        logger.debug("Debug example")
+        logger.info("Info example")
+        logger.notice("Notice example")
+        logger.warning("Warning example")
+        logger.error("Error example")
+        logger.critical("Critical example")
+        logger.fault("Fault example")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

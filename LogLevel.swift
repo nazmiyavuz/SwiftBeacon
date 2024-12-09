@@ -19,7 +19,6 @@ public enum LogLevel {
     
     var prefix: String {
         switch self {
-        
         case .trace:    return "LOGGER.TRACE 🟣"
         case .debug:    return "LOGGER.DEBUG 🔵"
         case .info:     return "LOGGER.INFO 🟢"
