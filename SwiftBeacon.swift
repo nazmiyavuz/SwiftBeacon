@@ -34,7 +34,7 @@ public struct SwiftBeacon {
     
     @available(macOS 10.15, iOS 15.0, *)
     private var logName: String {
-        _logName ?? "logging of \(subsystem ?? "")"
+        _logName ?? "SwiftBeacon"
     }
     
     @available(macOS 10.15, iOS 15.0, *)
