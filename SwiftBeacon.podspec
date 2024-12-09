@@ -6,7 +6,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nazmiyavuz' => 'nazmiyavuz@gmail.com' }
   s.source           = { :git => 'https://github.com/nazmiyavuz/SwiftBeacon.git', :tag => s.version.to_s }
-  s.readme           = "https://raw.githubusercontent.com/nazmiyavuz/SwiftBeacon/#{s.version.to_s}/README.md"
   s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '12'
 
