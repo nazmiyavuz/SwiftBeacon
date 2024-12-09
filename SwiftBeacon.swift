@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  SwiftBeacon.swift
 //  Pods
 //
 //  Created by Nazmi Yavuz on 9.12.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Logger {
+public struct SwiftBeacon {
     
     public init() {}
 
@@ -50,7 +50,19 @@ public struct Logger {
             fullString += " → \(context.description)"
         }
         #if DEBUG
-        print(fullString)
+        switch level {
+            
+        case .verbose:
+            print(fullString)
+        case .info:
+            print(fullString)
+        case .debug:
+            print(fullString)
+        case .warning:
+            print(fullString)
+        case .error:
+            print(fullString)
+        }
         #endif
     }
 }
