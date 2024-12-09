@@ -1,0 +1,6 @@
+framework module SwiftBeacon {
+  umbrella header "SwiftBeacon-umbrella.h"
+
+  export *
+  module * { export * }
+}

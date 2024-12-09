@@ -1,0 +1,6 @@
+framework module Pods_SwiftBeacon_Example {
+  umbrella header "Pods-SwiftBeacon_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
