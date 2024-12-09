@@ -1,5 +1,5 @@
 PODS:
-  - SwiftBeacon (0.1.0)
+  - SwiftBeacon (1.0.0)
 
 DEPENDENCIES:
   - SwiftBeacon (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftBeacon: 68de422b41909a784323bc31461fbb4a779e1254
+  SwiftBeacon: b9ad6773940f0478781df9ae3f7972dd604c6dbc
 
-PODFILE CHECKSUM: f90f41a97322ebf5343ae85c6cd9207e356a1716
+PODFILE CHECKSUM: 478d878d99757579d2c11f5a912fcee544086f3a
 
 COCOAPODS: 1.16.2
