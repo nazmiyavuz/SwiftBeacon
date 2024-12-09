@@ -82,22 +82,3 @@ public struct SwiftBeacon {
         #endif
     }
 }
-
-/*
- public func trace(
-     _ message: @autoclosure () -> Any,
-     shouldLogContext: Bool = true,
-     file: String = #file,
-     line: Int = #line,
-     function: String = #function
- ) {
-     
-     let context = Context(file: file, function: function, line: line)
-     handleLog(
-         level: .info,
-         message: message(),
-         shouldLogContext: shouldLogContext,
-         context: context
-     )
- }
- */
