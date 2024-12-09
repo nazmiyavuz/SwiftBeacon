@@ -18,6 +18,52 @@ it, simply add the following line to your Podfile:
 pod 'SwiftBeacon'
 ```
 
+### CocoaPods
+
+#### Simply
+
+Simply add the following line to your Podfile:
+
+```ruby
+pod 'SwiftBeacon'
+```
+
+##### For the stable version
+
+```ruby
+pod 'SwiftBeacon', :git => 'https://github.com/nazmiyavuz/SwiftBeacon.git', :branch => 'main'
+```
+
+or
+
+```ruby
+platform :ios, '12.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+
+    pod 'SwiftBeacon', :git => 'https://github.com/nazmiyavuz/SwiftBeacon.git', :branch => 'main'
+
+end
+```
+
+#### For the exact version
+
+```ruby
+pod 'SwiftBeacon', '~> 1.0.5'
+```
+
+### Swift Package Manager
+
+EdgeKit is available through [Swift Package Manager](https://swift.org/package-manager/). To install
+it, in Xcode select `File` > `Add Package Dependencies...` and add EdgeKit repository URL:
+
+```url
+https://github.com/nazmiyavuz/SwiftBeacon.git
+```
+
+Note: Please update the latest version or `main` branch of the EdgeKit repository in order to get the latest features.
+
 ## Author
 
 nazmiyavuz, nazmiyavuz@gmail.com
