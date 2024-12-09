@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SwiftBeacon
+
+let logger = Logger()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
