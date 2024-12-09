@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SwiftBeacon
+
+let logger = SwiftBeacon(logName: "uiDesign")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
